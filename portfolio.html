@@ -13,31 +13,34 @@
 
 <body>
 
-    <header class="fixed-top">
-        <div class="container" id="headcontent">
-            <nav class="navbar navbar-expand-lg placenav">
-                <h1 class="bg-info text-white">Gouri Peddinti</h1>
-                <ul class="navbar-nav ml-auto" id="navmenu">
-                    <li class="nav-item active">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" id="logo">Gouri Pedinti</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
                 </ul>
+            </div>
 
-            </nav>
         </div>
-    </header>
+    </nav>
 
-    <div class="space"></div>
-
-
+   
     <div id="maincontent" class="container bg-white clearfix">
-        <h2>Portfolio</h2>
+        <h2  class="block-header">Portfolio</h2>
         <div class="gallery float-left">
             <img class="galleryimg" src="assets/images/img1.jpg" alt="portfoliogalleryimage1">
             <p class="gallerytext">iFly</p>
@@ -61,15 +64,15 @@
         
     </div>
 
-    <div class="space"></div>
-
-    <div class="fixed-bottom" id="footerdiv">
-        <footer class="fixed-bottom text-center">
-            Copyright@
-        </footer>
-    </div>
-
-
-
+ 
+  <!-- Start of footer -->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+        &copy; Copyright@
+    </p>
+</footer>
+<!-- End of footer -->
 
 </body>
+</html>

@@ -13,54 +13,82 @@
 
 <body>
 
-        <header class="fixed-top">
-            <div class="container" id="headcontent">
-                <nav class="navbar navbar-expand-lg placenav">
-                    <h1 class="bg-info text-white">Gouri Peddinti</h1>
-                    <ul class="navbar-nav ml-auto" id="navmenu">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" id="logo">Gouri Pedinti</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                </nav>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
-    </header>
+    </nav>
 
-    <div class="space"></div>
 
-    <div class="container bg-white" id="maincontent">
-        <h2>Contact</h2>
-        <form>
-            <div class="form-group">
-                <label for="contactFormNameInput">Name</label>
-                <input type="text" class="form-control" id="contactFormNameInput">
+    <!-- Main content -->
+    <main class="container">
+        <section class="row">
+            <div class="col-md-8">
+                <form class="block form-horizontal">
+                    <h1 class="block-header">Contact</h1>
+                    <hr />
+                    <div class="form-group">
+                        <label for="contactFormNameInput" class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="contactFormNameInput" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactFormEmailInput" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="contactFormEmailInput"
+                                placeholder="name@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="controlFormMessageInput">Message</label>
+                        <div class="col-sm-10">
+                            <textarea id="controlFormMessageInput" class="form-control" rows="3"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <button class="submit-btn">Submit</button>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="contactFormEmailInput">Email address</label>
-                <input type="email" class="form-control" id="contactFormEmailInput" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-                <label for="controlFormMessageInput">Message</label>
-                <textarea class="form-control" id="controlFormMessageInput" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
+        </section>
+    </main>
+    <!-- End of Main Content -->
 
-    <div class="space"></div>
+    <!-- Start of footer -->
+    <footer class="footer">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+            &copy; Copyright@
+        </p>
+    </footer>
+    <!-- End of footer -->
 
-    <div class="fixed-bottom" id="footerdiv">
-        <footer class="fixed-bottom text-center">
-            Copyright@
-        </footer>
-    </div>
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </script>
+
 </body>
 
 </html>
